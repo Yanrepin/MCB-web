@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MCB - משה כהן יועץ כלכלי ומשכנתאות</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.15.0/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script  src="jquery-3.6.3.js" type="text/javascript"></script>
+ 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
+  </head>
+
+
+  <body style="background-image: url(house-money.jpg); font-family:'Times New Roman', Times, serif ; font-size: large;background-size:contain;">
+    <div class="continer-fluid h-100 w-100">
+      <nav class="navbar fixed-top navbar-expand bg-dark" id="menu">
+          <div class="collapse navbar-collapse" >
+            <div class="navbar-nav offset-sm-1 "></div>
+            <div class="navbar-nav offset-sm-1 ">
+            <img src="MCB.jpg" class="rounded-circle" style="width: 45px;">
+            </div>
+            <div class="navbar-nav offset-sm-1" ><a class="nav-link text-light" href="#home">דף הבית</a></div>
+            <div class="navbar-nav offset-sm-1"><a class="nav-link text-light" href="#forms">טפסים</a></div>
+            <div class="navbar-nav offset-sm-1"><a class="nav-link text-light" href="#coments">המלצות</a></div>
+            <div class="navbar-nav offset-sm-1"><a class="nav-link text-light" href="#contact">יצירת קשר</a></div>
+          </div>
+      </nav>
+
+      <div class="row blocker" style="height: 50px;background-color: black;" id="home">
+      </div>
+
+      <div class="row" style="margin-top: 2%;" >
+        <div id="face" class="col-sm-3 offset-sm-1">
+          <img src="משה כהן.jpg" style="object-fit: fill; height: 300px; border-radius: 50%;">
+        </div>
+        <div class="col-sm-5" style="background-color: bisque; border-radius: 10%; text-align: center;">
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+             אז מי אני?!
+          </h3>
+          <label style="margin-top: 2%;">
+            שמי משה כהן בעל תואר ראשון ב___ ובעל תואר שני ב___ מומחה ב____
+          <br><br>
+          יועץ כלכלי ומשכנתאות מזה מספר שנים, בעל מספר עצום של הצלחות ואלפי לקוחות מרוצים.
+          <br><br>
+            לאורך השנים חסכתי ללקוחותי אלפי ומאות אלפי שקלים.
+          <br><br>
+          המטרה שלי לדאוג לשקט הכלכלי והנפשי שלכם תוך סיוע בקבלת החלטות הכלכליות ולהוביל אתכם למיקסום הפוטנציאל הכלכלי תוך הבנת מצבכם הנוכחי.
+          <br><br>
+          </label>
+        </div>
+      </div>
+
+      
+
+      
+      <div class="row" style="margin-top: 7%;  text-align: center;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 " style="background-color: bisque;border-radius: 10%; " >
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+            יועץ משכנתאות? במה הוא עוזר לי?
+         </h3>
+         <label>
+          <ul class="one" style="list-style: circle; text-align: right;">
+            <li><h4 style="display: inline-block;">איסוף נתונים - </h4> היכרות עם צורכי הלקוח ובדיקת כדאיות העסקה - יועץ המשכנתא מאגד את כל הנתונים הפיננסיים הרלוונטיים לצורך ביצוע העסקה.<br>בוחן האם עומד לרשותו ההון הנדרש לביצוע העסקה, לאיזו מטרה מתבצעת העסקה, והאם היא מתאימה לצורכי הלקוח.</li>
+            <li><h4 style="display: inline-block;">בירוקרטיה - </h4> יועץ משכנתאות חיצוני חוסך ללקוח את הלחץ, הטרטור והמטרד שבהמצאת מסמכים וניירת אינסופית בכל פעם שהבנק מבקש.</li>
+            <li><h4 style="display: inline-block;">חיסכון בכסף - </h4> יועץ המשכנתאות אמור לחסוך ללקוח כסף. יועץ טוב יכול לחסוך ללקוח עשרות ומאות אלפי שקלים על ידי התאמת מסלולי ריביות והחזרים חודשיים שמתאימים באופן אופטימלי לצרכים וליכולות של הלקוח מבלי שירגיש שהמשכנתא חונקת אותו.</li>
+            <li><h4 style="display: inline-block;">ליווי אישי - </h4> ניצב לצד הלקוח בכל שלב ומסייע לו לעבור את כל התהליך בשלווה, בביטחון ועם שקט נפשי.</li>
+          </ul>
+
+         </label>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 7%;  text-align: center; ">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 " style="background-color: bisque;border-radius: 15%; " >
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+            הבנקים שאנו עובדים איתם...
+         </h3>
+         <label>
+          <img src="בינלאומי.png" style="height: 100px;width: 100px;">
+          <img src="דיסקונט.png" style="height: 100px;width: 100px;">
+          <img src="לאומי.png" style="height: 100px;width: 100px;">
+          <img src="מזרחי.jpg" style="height: 100px;width: 100px;">
+          <img src="פועלים.png" style="height: 100px;width: 100px;">
+          <img src="יהב.png" style="height: 100px;width: 100px;">
+          <img src="אוצר החייל.png" style="height: 100px;width: 100px;">
+         </label>
+        </div>
+      </div>
+      
+
+      <div class="row" style="margin-top: 7%;  text-align: center; " id="forms">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 " style="background-color: bisque;border-radius: 15%; " >
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+            טפסים
+         </h3>
+         <label>
+          <ul class="one" style="list-style: circle; text-align: right;">
+            <li><a href="https://docs.google.com/forms/d/1tmfBTXQBwHeKntJGaffyEYFPUgCrgOvADvyGIqZIyYI/viewform?edit_requested=true"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">טופס לצורך לקיחת משכנתא</h4></a></li>
+            <li><a href="https://www.gov.il/he/service/land_registration_extract"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">הוצאת נסח טאבו</h4></a></li>
+            <li><a href="https://www.madlan.co.il/"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">מדלן - בדיקת שווי נכס</h4></a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFnbe4YjK57dAL9ka6xLDBjeXa9Ys56aUFurJH0PqRyMtXTg/viewform"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">הוצאת תעודת זכאות</h4></a></li>
+            <li><a href="https://www.gov.il/he/Departments/israel_land_authority/govil-landing-page"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">בקשה לאישור זכויות בנכס במנהל מקרקעין</h4></a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdUJxOWCdiDaTa0ei-1XAu7BM1flgpM236lvGhghxorx515Iw/viewform"><img src="טופס.png" style="width: 50px;height: 50px;"><h4 style="display: inline-block;">הוצאת דו"ח יתרות משכנתא</h4></a></li>
+          </ul>
+         </label>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top: 7%;  text-align: center; " id="coments">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 " style="background-color: bisque;border-radius: 15%; " >
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+            המלצות
+         </h3>
+        </div>
+      </div>
+      <div class="row" style="height: 150px;margin-top: 1%;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 1.png" style="width: 100%; height: 100%;"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 2.png" style="width: 100%; height: 100%;"></div>
+      </div>
+      <div class="row" style="height: 150px; margin-top: 1%;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 3.png" style="width: 100%; height: 100%;"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 4.png" style="width: 100%; height: 100%;"></div>
+      </div>
+      <div class="row" style="height: 150px; margin-top: 2%;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 5.png" style="width: 100%; height: 100%;"></div>
+        <div class="col-sm-4 col-6"><img src="המלצה 6.png" style="width: 100%; height: 100%;"></div>
+      </div>
+      
+
+      <div class="row" style="margin-top: 10%;  text-align: center; " id="contact">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 " style="background-color: bisque;border-radius: 15%; " >
+          <h3 style="font-weight: 700; color: rgb(75, 75, 238); font-family: Arial, Helvetica, sans-serif;">
+            יצירת קשר
+         </h3>
+         <label style="text-align: right;">
+          <a href="whatsapp://send?phone=+972529432445">
+            <img src="whatsapp-logo.png" style="height: 50px; width: 50px;">052-943-2445
+          </a>
+          <br>
+          <a href="https://www.facebook.com/profile.php?id=100063680853306">
+            <img src="fb_icon.png" style="height: 50px; width: 50px;">Mcb - יועץ כלכלי ומשכנתאות
+          </a>
+          <br>
+          <a href="mailto:moshe.mcb@gmail.com">
+            <img src="black-email-logo.png" style="height: 50px; width: 50px;">moshe.mcb@gmail.com
+          </a>
+          <br>
+          <a href="tel:052-943-2445">
+            <img src="tel-logo.webp" style="height: 50px; width: 50px;">052-943-2445
+          </a>
+
+
+         </label>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="row" style="margin-top: 5%;">
+        <div class="col-12 bg-dark text-center text-white">
+            copyright © 2023       created by Yan Repin
+        </div>
+      </div>
+
+
+    
+
+
+
+    </div>
+    
+    
+    <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.enable.co.il/licenses/enable-L17262hfajwm2i3l-0123-40719/init.js"></script>
+  </body>
+</html>

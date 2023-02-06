@@ -1,0 +1,17 @@
+#face{
+
+    direction: ltr;
+    height: 300px; 
+}
+@media (max-width: 480px){
+    #face{
+
+        direction: rtl;
+        height: 300px; 
+        margin-right: 5%;
+    }
+
+
+
+
+}
